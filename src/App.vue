@@ -7,10 +7,10 @@
     </div>
   </div>
   <nav class="nav" id="dropdown">
-    <div class="nav-item">
+    <router-link tag="div" :to="{name : Home}" class="nav-item">
       <i class="fas fa-home nav-item-icon"></i>
       <p class="nav-item-text">Inicio</p>
-    </div>
+    </router-link>
     <div class="nav-item">
       <i class="fas fa-search-dollar nav-item-icon"></i>
       <p class="nav-item-text">Ofertas</p>
@@ -44,6 +44,10 @@ export default {
 };
 </script>
 <style scoped>
+a{
+  text-decoration: none;
+  color: var(--amber);
+}
 .nav-header-text {
   width: 100%;
   font-family: "Permanent Marker", cursive;
@@ -117,11 +121,11 @@ export default {
   margin-right: 2rem;
 }
 @media (min-width: 768px) {
-  .nav-header{
+  .nav-header {
     font-size: 2.5rem;
   }
   .nav-header-text {
-     font-size: 2rem;
+    font-size: 2rem;
   }
   .nav-header-icon {
     width: 50%;
@@ -138,15 +142,16 @@ export default {
     font-size: 2rem;
     justify-content: none;
     box-sizing: border-box;
+    position: relative;
   }
-  .nav-item{
+  .nav-item {
     width: 100%;
     box-sizing: content-box;
   }
   .nav-item:hover {
-     background-color: var(--amber);
-      color: var(--orange);
-       text-shadow: 2px 1px var(--black);
+    background-color: var(--amber);
+    color: var(--orange);
+    text-shadow: 2px 1px var(--black);
   }
 }
 </style>

@@ -1,15 +1,16 @@
-:root{
-    --black : #12130F ;
-    --grey : #474747 ;
-    --orange : #EE6123 ;
-    --amber : #FFBF00 ;
-    --white : #FCFCFC ;
-    font-size: 10px;
-    position: relative;
+:root {
+  --black: #12130f;
+  --grey: #474747;
+  --orange: #ee6123;
+  --amber: #ffbf00;
+  --white: #fcfcfc;
+  font-size: 10px;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  background-color: var(--white);
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
