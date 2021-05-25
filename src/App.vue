@@ -117,6 +117,12 @@ export default {
   margin-right: 2rem;
 }
 @media (min-width: 768px) {
+  .nav-header{
+    font-size: 2.5rem;
+  }
+  .nav-header-text {
+     font-size: 2rem;
+  }
   .nav-header-icon {
     width: 50%;
   }
