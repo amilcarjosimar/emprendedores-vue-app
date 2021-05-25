@@ -1,4 +1,15 @@
+:root{
+    --black : #12130F ;
+    --grey : #474747 ;
+    --orange : #EE6123 ;
+    --amber : #FFBF00 ;
+    --white : #FCFCFC ;
+    font-size: 10px;
+    position: relative;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
+
