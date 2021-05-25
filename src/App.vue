@@ -7,14 +7,14 @@
     </div>
   </div>
   <nav class="nav" id="dropdown">
-    <router-link tag="div" :to="{name : Home}" class="nav-item">
+    <router-link tag="div" :to="{name : 'Home'}" class="nav-item">
       <i class="fas fa-home nav-item-icon"></i>
       <p class="nav-item-text">Inicio</p>
     </router-link>
-    <div class="nav-item">
+    <router-link tag="div" :to="{name : 'HotDeals'}" class="nav-item">
       <i class="fas fa-search-dollar nav-item-icon"></i>
       <p class="nav-item-text">Ofertas</p>
-    </div>
+    </router-link>
     <div class="nav-item">
       <i class="fas fa-comments-dollar nav-item-icon"></i>
       <p class="nav-item-text">Comprar</p>
@@ -51,7 +51,7 @@ a{
 .nav-header-text {
   width: 100%;
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .nav-header {
   position: relative;
@@ -125,10 +125,13 @@ a{
     font-size: 2.5rem;
   }
   .nav-header-text {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .nav-header-icon {
     width: 50%;
+  }
+  #fa-toggle-container{
+    padding-top: .5rem;
   }
 }
 @media (min-width: 992px) {

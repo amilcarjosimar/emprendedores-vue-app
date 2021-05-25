@@ -1,9 +1,10 @@
 :root {
   --black: #12130f;
-  --grey: #474747;
+  --gray: #474747;
   --orange: #ee6123;
   --amber: #ffbf00;
   --white: #fcfcfc;
+  --green: #92CD29;
   font-size: 10px;
   position: relative;
   font-family: "Lato", sans-serif;
