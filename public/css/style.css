@@ -9,8 +9,27 @@
   position: relative;
   font-family: "Lato", sans-serif;
   background-color: var(--white);
+  
+}
+/* width */
+::-webkit-scrollbar {
+  width: .4rem;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #12130f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee6123;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffbf00;
+}
 * {
   margin: 0;
   padding: 0;

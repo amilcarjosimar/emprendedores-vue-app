@@ -1,7 +1,7 @@
 <template>
   <div class="deals-container">
     <div class="deal" v-for="deal in deals" :key="deal">
-      <img :src="deal.photoURL" class="deal-photo" />
+      <img alt="deal image" :src="deal.photoURL" class="deal-photo" />
       <h4 class="deal-title">{{ deal.name }}</h4>
       <small class="deal-price">$400.00</small>
       <button class="deal-button">Agregar</button>
@@ -18,7 +18,6 @@
   row-gap: 12px;
   padding: 0.5rem;
   text-align: center;
-
   box-sizing: border-box;
 }
 .deal {
@@ -61,6 +60,41 @@
     font-size: 1.3rem;
     text-align: start;
     padding-left: 1rem;
+}
+@media (min-width: 768px) {
+.deals-container {
+     grid-template-columns: auto auto auto;
+}
+.deal-title {
+    font-size: 2.5rem;
+}
+.deal-button {
+    font-size: 1.8rem;
+}
+.deal-price{
+    font-size: 1.4rem;
+}
+}
+@media (min-width: 992px) {
+.deals-container {
+     grid-template-columns: auto auto auto auto;
+}
+.deal-photo {
+    height: 30rem;
+    width: 80%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.deal-title {
+    font-size: 3rem;
+}
+.deal-button {
+    font-size: 2rem;
+}
+.deal-price{
+    font-size: 1.6rem;
+}
 }
 </style>
 <script>
