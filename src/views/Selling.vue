@@ -57,7 +57,6 @@ export default {
 
   color: var(--amber);
   text-shadow: 3px 3px var(--orange);
-  margin-top: 10rem !important;
   margin: 0 1rem;
   border-radius: 1rem;
 }
