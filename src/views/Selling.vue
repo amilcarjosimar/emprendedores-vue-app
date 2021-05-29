@@ -37,7 +37,7 @@ export default {
     publishItem() {
       this.$store.dispatch("pushItem", this.item);
       this.item = {};
-      document.querySelector("#succes-message").classList.toggle("active")
+      document.querySelector("#succes-message").classList.toggle("active");
     },
   },
 };
@@ -53,11 +53,10 @@ export default {
   margin-right: auto;
 }
 .sell-form {
+  margin: 3rem 1rem;
   padding: 1rem 0;
-
   color: var(--amber);
   text-shadow: 3px 3px var(--orange);
-  margin: 0 1rem;
   border-radius: 1rem;
 }
 .input-group:last-child {
@@ -103,8 +102,8 @@ export default {
   margin-top: 1rem;
   display: none;
 }
-.active{
-    display: initial;
+.active {
+  display: initial;
 }
 @media (min-width: 992px) {
   .sell-img {

@@ -3,6 +3,7 @@
     <div class="deal" v-for="deal in deals" :key="deal">
       <img alt="deal image" :src="deal.photoURL" class="deal-photo" />
       <h4 class="deal-title">{{ deal.name }}</h4>
+      <small style="font-color : red; text-align: start; padding-left:1rem"> <del>$1000</del></small>
       <small class="deal-price"
         >${{
           parseFloat(Math.floor(Math.random() * (800 - 200)) + 200).toFixed(2)
