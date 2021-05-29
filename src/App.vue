@@ -15,14 +15,14 @@
       <i class="fas fa-search-dollar nav-item-icon"></i>
       <p class="nav-item-text">Ofertas</p>
     </router-link>
-    <div class="nav-item">
+    <router-link tag="div" :to="{name : 'Buying'}" class="nav-item">
       <i class="fas fa-comments-dollar nav-item-icon"></i>
       <p class="nav-item-text">Comprar</p>
-    </div>
-    <div class="nav-item">
+    </router-link>
+    <router-link tag="div" :to="{name : 'Selling'}" class="nav-item">
       <i class="fas fa-comment-dollar nav-item-icon"></i>
       <p class="nav-item-text">Vender</p>
-    </div>
+    </router-link>
   </nav>
   <router-view />
 </template>

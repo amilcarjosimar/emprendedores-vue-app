@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import HotDeals from "../views/HotDeals.vue";
+import Selling from "../views/Selling.vue";
+import Buying from "../views/Buying.vue";
 const routes = [
   {
     path: "/",
@@ -11,6 +13,16 @@ const routes = [
     path: "/ofertas",
     name: "HotDeals",
     component: HotDeals,
+  },
+  {
+    path: "/vender",
+    name: "Selling",
+    component: Selling,
+  },
+  {
+    path: "/comprar",
+    name: "Buying",
+    component: Buying,
   },
   // {
   //   path: "/about",
